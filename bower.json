@@ -1,0 +1,23 @@
+{
+  "name": "LittleGame",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lagonnebula/LittleGame",
+  "authors": [
+    "lagonnebula <laginnebula2@gmail.com>"
+  ],
+  "license": "Apache 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "socket.io": "~1.3.4",
+    "Keypress": "~2.1.0"
+  }
+}
