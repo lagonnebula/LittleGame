@@ -46,8 +46,8 @@ gulp.task('buildjs', function(){
     gulp.src(path.src.js+'**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        .pipe(concat("game.min.js"))
-        .pipe(uglify())
+        //.pipe(concat("game.min.js"))
+        //.pipe(uglify())
         .pipe(gulp.dest(path.dist.js))
         .pipe(notify({ message: 'Finished minifying JavaScript'}));
 });
