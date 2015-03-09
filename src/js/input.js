@@ -38,7 +38,7 @@
         delete ennemiesObj[data];
     });
 
-    var game = new Phaser.Game(CONST.width,CONST.height, Phaser.WEBGL, 'game', { preload: preload, create: create, update: update });
+    var game = new Phaser.Game(CONST.width,CONST.height, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
     var sol;
     var player;
@@ -98,7 +98,7 @@
         PlayerObj.rotation = player.rotation;
         socket.emit("player infos", PlayerObj);
 
-        for(id in ennemiesData){
+        for(var id in ennemiesData){
             if(typeof ennemiesObj[id] === "undefined"){
                 console.log("Sprite added for %s", id);
                 console.log(ennemiesData[id]);

@@ -25,7 +25,6 @@ build/Release
 node_modules
 src/components
 .idea
-dist
 
 # Users Environment Variables
 .lock-wscript
